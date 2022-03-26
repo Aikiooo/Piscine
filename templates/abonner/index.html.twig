@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AbonnerController!{% endblock %}
+
+{% block body %}
+{{ form_start(form) }}
+<div class='form-group'>
+    {{ form_label(form.typeAbonnement) }}
+    {{ form_widget(form.typeAbonnement) }}
+    <button type='submit' class='btn btn-success'>Valider</button>
+    </div>
+
+    {{ form_end(form) }}
+{% endblock %}
